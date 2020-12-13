@@ -6,3 +6,13 @@ El proyecto de Backend se encuentra en [este repositorio](https://github.com/raf
 ```
 npm install
 ```
+
+## Configuración
+### .env
+Para entorno de desarrollo crear un fichero .env en la raíz del proyecto Este proyecto utiliza las siguientes variables de entorno:
+- REACT_APP_API_HOST: url y puerto del servidor de la api (backend). ej. http://localhost:3001
+
+# Ejecutar Aplicación
+````
+npm start
+````
