@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiHost = "http://localhost:8080/api/tic-tac-toe/play";
+const apiHost = process.env.REACT_APP_API_HOST + "/api/tic-tac-toe/play";
 
 const sendRequest = async (matchToken, matchData) => {
   const config = {
