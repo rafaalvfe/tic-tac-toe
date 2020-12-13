@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Grid } from "@material-ui/core";
+import Board from "./components/board/Board";
+import GameContextProvider from "./components/game/GameContextProvider";
+import GameView from "./components/game/GameView";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GameContextProvider>
+        <h2>TIC-TAC-TOE</h2>
+        <Grid container>
+          <Grid item xs={12}>
+            <GameView />
+          </Grid>
+        </Grid>
+      </GameContextProvider>
     </div>
   );
 }
